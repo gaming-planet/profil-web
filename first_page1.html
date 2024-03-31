@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Rui-Jia Meng</title>
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  :root {
+    
+    --text-color: hsl(0, 0%, 2%);
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: rgb(237, 235, 235);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #myimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    position:absolute;
+    top:47%;
+    left:37.5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .button {
+    position:absolute;
+    top:54.5%;
+    left:40.8%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .btn {
+    width: 110px;
+    height: 60px;
+    vertical-align: middle;
+    border: 10px double black;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    
+    background-color: #bcd2ef;
+    color: #130a0a;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #3b4492;
+  }
+
+  .btn2{
+    width: 110px;
+    height: 60px;
+    vertical-align: middle;
+    border: 10px double black;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bcd2ef;
+    color: #130a0a;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .btn2:hover {
+      background-color: #454ea0;
+  }
+  .paper{
+    border: 5px solid #555;
+    border-radius: 50%;
+    
+  }
+  .logo{
+    position: absolute;
+    top: -100px;
+    left: 140px;
+    height: 90px;
+    width: auto;
+    border-radius: 20%;
+  }
+
+  .ruijia{
+    font-size:30px;
+  }
+  .wrapper {
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+    min-height: 5vh;
+    font-family: cursive;
+    font-size: clamp(1.5rem, 1rem + 18vw, 2rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+  
+  .wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+
+  .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  }
+
+  .bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+  }
+  @media screen and (max-width: 768px) { 
+    
+    
+    .container {
+      position:absolute;
+      top:47%;
+      left:25%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  
+    
+    .button {
+      position:absolute;
+      top:54.5%;
+      left:32%;
+      margin-left: auto;
+      margin-right: auto;
+      
+      font-family: cursive;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+
+  }
+
+</style>
+
+<script type='text/javascript'>
+    var imageID = 0;
+    function changeimage(every_seconds) {
+        //change the picture (background) every second
+        if (!imageID) {
+            document.getElementById("myimage").src ="p1.jpg";
+            imageID++;
+        } else if (imageID == 1) {
+            document.getElementById("myimage").src = "p9.jpg";
+            
+            imageID++;
+        } else if (imageID == 2) {
+            document.getElementById("myimage").src = "p2.jpg";
+            imageID ++;
+        } else if (imageID == 3) {
+            document.getElementById("myimage").src = "p3.jpg";
+            imageID ++;
+        } else if (imageID == 4) {
+            document.getElementById("myimage").src = "p4.jpg";
+            imageID ++;
+        }else if (imageID == 5) {
+          document.getElementById("myimage").src = "cherry.jpg";
+          imageID ++;
+          //acces
+        }else if (imageID == 6) {
+          document.getElementById("myimage").src = "p5.jpg";
+          imageID ++;
+          //cloud
+        }else if (imageID == 7) {
+          document.getElementById("myimage").src = "p8.jpg";
+          imageID ++;
+          //sky
+        }else if (imageID == 8) {
+          document.getElementById("myimage").src = "p7.jpg";
+          imageID = 0;
+        }
+        setTimeout("changeimage(" + every_seconds + ")", every_seconds * 500);
+    }
+</script>
+
+</head>
+
+<body onload="changeimage(4)"> 
+    
+    <img id="myimage" src="">
+    <img src="OIP.jpg" class="paper" alt="some_text" style="opacity:0.8;filter:alpha(opacity=90);"/>
+    
+    <div class="container">
+
+      <img  src="channels4_profile.jpg" class="logo">  
+      <section class="wrapper">
+        <div class="top">welcome to my page</div>
+        <div class="bottom" aria-hidden="true">Welcome to my page</div>
+      </section>
+   </div>
+    
+    <div class="button">
+      <a href="main_page.html" class="btn"> Coding </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://ruijiameng123.wixsite.com/website" class="btn2"> Art </a>
+    </div>
+
+   
+</body>
+
+</html>
