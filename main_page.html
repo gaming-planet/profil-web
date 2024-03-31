@@ -4,6 +4,11 @@
   <title>Rui-jia Meng - Software Engineer</title>
 
   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
     
     body {
       overflow: hidden;
@@ -627,11 +632,13 @@
 
     <script type = "text/javascript">
       let image = document.getElementById("image");
-      let images = ["pf.jpg", "omghahaha.jpg", "ciewow.jpg" ]
-      setInterval(function(){
-        let random= Math.floor(Math.random()*3);
-        image.src = images[random]
-      },800);
+      let images = ["pf.jpg", "omghahaha.jpg", "ciewow.jpg"];
+      let currentImageIndex = 0;
+
+      image.onclick = function() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        image.src = images[currentImageIndex];
+      };
     </script>
 
     <script>
