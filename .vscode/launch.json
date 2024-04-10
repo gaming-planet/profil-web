@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Rui-Jia Meng/OneDrive/桌面/profile",
-      "program": "c:/Users/Rui-Jia Meng/OneDrive/桌面/profile/build/Debug/outDebug",
+      "cwd": "c:/Users/ruiji/OneDrive/Desktop/profil-web",
+      "program": "c:/Users/ruiji/OneDrive/Desktop/profil-web/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
