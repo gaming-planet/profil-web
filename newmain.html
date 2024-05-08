@@ -147,12 +147,14 @@
       background-color: rgba(6, 22, 36, 0.9); /* Use RGBA for background color with 90% opacity */
     }
 
+    
     .white2 {
-      
-      
-      height: 700px;
+      position: fixed;
+      top: 60vh; 
+      height: 50vh; /* Adjust the height as needed */
       width: 100%;
-      margin-top: 150px;
+      min-height: 600px; /* Minimum height of the section */
+      
       z-index: -1;
       flex-direction: row; /* Align children horizontally */
       border: 3px solid rgb(12, 5, 5);
@@ -163,6 +165,49 @@
       background-color: rgba(6, 22, 36, 0.9); /* Use RGBA for background color with 90% opacity */
     }
 
+   
+    .text-left p {
+      text-align: start;
+      margin-left: 40px;
+  }
+    .fancy-link {
+      
+      font-size: 60px;
+      color: #eeebeb;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+  
+    /* Hover effect for the fancy link */
+    .fancy-link:hover {
+        color: #666;
+        border-bottom: 1px solid #666;
+    }
+    
+    /* Style for the fancy button */
+    .fancy-button {
+        font-family: "Arial", sans-serif;
+        font-size: 500px;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    /* Hover effect for the fancy button */
+    .fancy-button:hover {
+        background-color: #666;
+    }
+
+  .heartlogo{
+    height: 60px;
+  }
+
+ .friendlogo{
+  height: 60px;
+ }
     
 
     .pf {
@@ -261,6 +306,17 @@
   </div>
 
   
+  <div class="white2" id="projectSection">
+    <div class="text-left">
+      <p><img src="friend.png" class="friendlogo">&nbsp;&nbsp;<a href="https://devpost.com/software/aa-lxzcj5" class="fancy-link">Frendule</a></p>
+      <p><img src="Heart-Palpitations.webp" class="heartlogo">&nbsp;&nbsp;<a href="https://gaming-planet.github.io/health_tester/health_tester/first.html" class="fancy-link">Health Tester</a></p>
+    </div>
+    <div class="project">
+        <div class="text" id="clickableText">
+            <p><span class="fancy2">Project</span></p>
+        </div>
+    </div>
+  </div>
 
   
   
