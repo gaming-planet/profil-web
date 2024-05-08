@@ -132,6 +132,8 @@
     }
 
     .white {
+     
+      top: 25vh;
       position: fixed; /* Make the background fixed */
       height: calc(100% - 95px); 
       height: 700px;
@@ -155,6 +157,22 @@
       width: 100%;
       min-height: 600px; /* Minimum height of the section */
       
+      z-index: -1;
+      flex-direction: row; /* Align children horizontally */
+      border: 3px solid rgb(12, 5, 5);
+      display: flex; /* Added to center the pf image inside the white class */
+      justify-content: space-between;  /* Center horizontally */
+      align-items: center; /* Center vertically */
+      position: relative; /* Make this a relative container */
+      background-color: rgba(6, 22, 36, 0.9); /* Use RGBA for background color with 90% opacity */
+    }
+    .idk {
+      position: fixed;
+      top: 60vh; 
+      height: 50vh; /* Adjust the height as needed */
+      width: 100%;
+      min-height: 600px; /* Minimum height of the section */
+      margin-top: 150px;
       z-index: -1;
       flex-direction: row; /* Align children horizontally */
       border: 3px solid rgb(12, 5, 5);
@@ -313,12 +331,23 @@
     </div>
     <div class="project">
         <div class="text" id="clickableText">
-            <p><span class="fancy2">Project</span></p>
+            <p><span class="fancy">Project</span></p>
         </div>
     </div>
   </div>
 
-  
+  <div class="idk" id="contactsection">
+    <div class="text" id="clickableText">
+        <p><span class="fancy">Contact</span></p>
+        <p>
+            <h1>Phone: 514-262-8618<br>
+                Email: <a href="mailto:ruijiameng@gmail.com">ruijiameng@gmail.com</a><br>
+                GitHub: <a href="https://github.com/gaming-planet">https://github.com/gaming-planet</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/rui-jia-meng-347088239/">https://www.linkedin.com/in/rui-jia-meng-347088239/</a>
+            </h1>
+        </p>
+    </div>
+</div>
   
   
   
