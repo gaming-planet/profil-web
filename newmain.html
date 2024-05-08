@@ -152,7 +152,7 @@
     
     .white2 {
       position: fixed;
-      top: 60vh; 
+      top: 50vh; 
       height: 50vh; /* Adjust the height as needed */
       width: 100%;
       min-height: 600px; /* Minimum height of the section */
@@ -186,7 +186,7 @@
    
     .text-left p {
       text-align: start;
-      margin-left: 40px;
+      margin-left: 90px;
   }
     .fancy-link {
       
@@ -263,7 +263,26 @@
       backdrop-filter: blur(10px); /* Soft blur effect behind the background */
       cursor: pointer; /* Change cursor to indicate clickable */
     }
-
+    .text2 {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      font-size: 70px;
+      font-weight: bold;
+      
+      text-shadow: 2px 2px 4px #04032c;
+      color: white;
+      text-align: center;
+      margin: 0;
+      white-space: nowrap;
+      padding: 20px; /* Add padding for better visibility of the background */
+      background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2)); /* Fancy gradient background */
+      border-radius: 10px; /* Rounded corners for the background */
+      transition: opacity 1s ease, transform 1s ease;
+      backdrop-filter: blur(10px); /* Soft blur effect behind the background */
+      cursor: pointer; /* Change cursor to indicate clickable */
+    }
      
     p {
       text-align: center;
@@ -290,6 +309,7 @@
       }
     }
 
+   
 
   </style>
 </head>
@@ -302,8 +322,9 @@
   <img id="myimage" src="" alt="">
   <header>
     <img src="channels4_profile.jpg" class="logo" alt="channels4_profile">
-    <h1>Rui-Jia Meng - Software Engineer</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;ab_channel=RickAstley" class="styled-link">
-    <h1>Project</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://ruijiameng123.wixsite.com/website" class="styled-link">
+    <h1>Rui-Jia Meng - Software Engineer</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#projectSection" class="styled-link" onclick="scrollToProject()">
+      <h1>Project</h1>
+  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://ruijiameng123.wixsite.com/website" class="styled-link">
     <h1>Art</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;ab_channel=RickAstley" class="styled-link">
     <h1>CV</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <div class="dropdown">
@@ -330,7 +351,7 @@
       <p><img src="Heart-Palpitations.webp" class="heartlogo">&nbsp;&nbsp;<a href="https://gaming-planet.github.io/health_tester/health_tester/first.html" class="fancy-link">Health Tester</a></p>
     </div>
     <div class="project">
-        <div class="text" id="clickableText">
+        <div class="text2" id="clickableText">
             <p><span class="fancy">Project</span></p>
         </div>
     </div>
@@ -360,6 +381,10 @@
     setTimeout("changeimage(" + every_seconds + ")", every_seconds * 1000);
   }
   
+  function scrollToProject() {
+    var projectSection = document.getElementById("projectSection");
+    projectSection.scrollIntoView({ behavior: "smooth" });
+}
 
   </script>
   
