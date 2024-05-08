@@ -234,5 +234,70 @@
         
       }
     }
-
     
+    .project {
+      margin-right: auto; /* Push the section to the left */
+      margin-left: 20px; /* Add some space from the left edge */
+      max-width: 50%; /* Limit the width of the section */
+    }
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+   
+   
+   
+    .text-left p {
+      text-align: start;
+      margin-left: 40px;
+  }
+    .fancy-link {
+      
+      font-size: 60px;
+      color: #eeebeb;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+  
+    /* Hover effect for the fancy link */
+    .fancy-link:hover {
+        color: #666;
+        border-bottom: 1px solid #666;
+    }
+    
+    /* Style for the fancy button */
+    .fancy-button {
+        font-family: "Arial", sans-serif;
+        font-size: 500px;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    /* Hover effect for the fancy button */
+    .fancy-button:hover {
+        background-color: #666;
+    }
+
+  .heartlogo{
+    height: 60px;
+  }
+
+ .friendlogo{
+  height: 60px;
+ }
