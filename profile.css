@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Rui-Jia Meng</title>
-  <style>
-    body {
+  body {
       margin: 0;
       padding: 0;
       background: rgb(237, 235, 235);
@@ -132,11 +127,10 @@
     }
 
     .white {
-      position: fixed; /* Make the background fixed */
+      top: 40vh; 
       height: calc(100% - 95px); 
       height: 700px;
       width: 100%;
-      margin-top: 300px;
       z-index: -1;
       flex-direction: row; /* Align children horizontally */
       border: 3px solid rgb(12, 5, 5);
@@ -148,10 +142,26 @@
     }
 
     .white2 {
-      
-      
-      height: 700px;
+      top: 60vh; 
+      height: 50vh; /* Adjust the height as needed */
       width: 100%;
+      min-height: 600px; /* Minimum height of the section */
+      
+      z-index: -1;
+      flex-direction: row; /* Align children horizontally */
+      border: 3px solid rgb(12, 5, 5);
+      display: flex; /* Added to center the pf image inside the white class */
+      justify-content: space-between;  /* Center horizontally */
+      align-items: center; /* Center vertically */
+      position: relative; /* Make this a relative container */
+      background-color: rgba(6, 22, 36, 0.9); /* Use RGBA for background color with 90% opacity */
+    }
+    
+    .idk {
+      top: 60vh; 
+      height: 50vh; /* Adjust the height as needed */
+      width: 100%;
+      min-height: 600px; /* Minimum height of the section */
       margin-top: 150px;
       z-index: -1;
       flex-direction: row; /* Align children horizontally */
@@ -162,8 +172,6 @@
       position: relative; /* Make this a relative container */
       background-color: rgba(6, 22, 36, 0.9); /* Use RGBA for background color with 90% opacity */
     }
-
-    
 
     .pf {
       margin-left: auto;
@@ -227,57 +235,4 @@
       }
     }
 
-
-  </style>
-</head>
-
-
-
-
-
-<body onload="changeimage(10)">
-  <img id="myimage" src="" alt="">
-  <header>
-    <img src="channels4_profile.jpg" class="logo" alt="channels4_profile">
-    <h1>Rui-Jia Meng - Software Engineer</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;ab_channel=RickAstley" class="styled-link">
-    <h1>Project</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://ruijiameng123.wixsite.com/website" class="styled-link">
-    <h1>Art</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;ab_channel=RickAstley" class="styled-link">
-    <h1>CV</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <div class="dropdown">
-      <button class="dropbtn styled-link">
-      <h1>Contact</h1></button>
-      <div class="dropdown-content">
-        <a href="mailto:ruijiameng123@gmail.com">Email</a> <a href="https://www.linkedin.com/in/rui-jia-meng-347088239/">LinkedIn</a> <a href="https://github.com/gaming-planet">Github</a>
-      </div>
-    </div>
-  </header>
-
-  <div class="white">
-    <div class="text" id="clickableText">
-    <p>Hi! I'm <span class="fancy">Rui-Jia MENG</span></p>
-    </div>
-  <img src="pf.jpg" class="pf2" alt="pf2">
-  <img src="art pic.jpg" class="pf" alt="pf">
-  </div>
-
-  
-
-  
-  
-  
-  
-<script type='text/javascript'>
-  var imageID = 0;
-  function changeimage(every_seconds) {
-    var images = ["p1.jpg","p2.jpg","p6.jpg","p7.jpg","p8.jpg"];
-    document.getElementById("myimage").src = images[imageID];
-    imageID = (imageID + 1) % images.length;
-    setTimeout("changeimage(" + every_seconds + ")", every_seconds * 1000);
-  }
-  
-
-  </script>
-  
-
-</body>
-</html>
+    
