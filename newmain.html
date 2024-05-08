@@ -133,7 +133,7 @@
 
     .white {
      
-      top: 25vh;
+      top: 23vh;
       position: fixed; /* Make the background fixed */
       height: calc(100% - 95px); 
       height: 700px;
@@ -152,7 +152,7 @@
     
     .white2 {
       position: fixed;
-      top: 50vh; 
+      top: 35vh; 
       height: 50vh; /* Adjust the height as needed */
       width: 100%;
       min-height: 600px; /* Minimum height of the section */
@@ -168,7 +168,7 @@
     }
     .idk {
       position: fixed;
-      top: 60vh; 
+      top: 30vh; 
       height: 50vh; /* Adjust the height as needed */
       width: 100%;
       min-height: 600px; /* Minimum height of the section */
@@ -182,6 +182,13 @@
       position: relative; /* Make this a relative container */
       background-color: rgba(6, 22, 36, 0.9); /* Use RGBA for background color with 90% opacity */
     }
+
+    .idk a {
+  color: white;
+}
+.idk a:hover {
+  color: purple;
+}
 
    
     .text-left p {
@@ -322,13 +329,21 @@
   <img id="myimage" src="" alt="">
   <header>
     <img src="channels4_profile.jpg" class="logo" alt="channels4_profile">
-    <h1>Rui-Jia Meng - Software Engineer</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#projectSection" class="styled-link" onclick="scrollToProject()">
-      <h1>Project</h1>
-  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://ruijiameng123.wixsite.com/website" class="styled-link">
-    <h1>Art</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;ab_channel=RickAstley" class="styled-link">
-    <h1>CV</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h1>Rui-Jia Meng - Software Engineer</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    
     <div class="dropdown">
-      <button class="dropbtn styled-link">
+      <button class="dropbtn styled-link" onclick="scrollToProject()">
+      <h1>Project</h1></button>
+      <div class="dropdown-content">
+        <a href="https://devpost.com/software/aa-lxzcj5">Friendule</a> <a href="https://gaming-planet.github.io/health_tester/health_tester/first.html">Health Tester</a> <a href="https://github.com/gaming-planet">Github</a>
+      </div>
+    </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://ruijiameng123.wixsite.com/website" class="styled-link">
+    <h1>Art</h1></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="Rui-Jia_Meng_CV.pdf" download="Rui-Jia_Meng_CV.pdf" class="styled-link">
+      <h1>CV</h1>
+    </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="dropdown">
+      <button class="dropbtn styled-link" onclick="scrollToContact()">
       <h1>Contact</h1></button>
       <div class="dropdown-content">
         <a href="mailto:ruijiameng123@gmail.com">Email</a> <a href="https://www.linkedin.com/in/rui-jia-meng-347088239/">LinkedIn</a> <a href="https://github.com/gaming-planet">Github</a>
@@ -357,7 +372,7 @@
     </div>
   </div>
 
-  <div class="idk" id="contactsection">
+  <div class="idk" id="contactSection">
     <div class="text" id="clickableText">
         <p><span class="fancy">Contact</span></p>
         <p>
@@ -384,9 +399,13 @@
   function scrollToProject() {
     var projectSection = document.getElementById("projectSection");
     projectSection.scrollIntoView({ behavior: "smooth" });
-}
+  }
 
-  </script>
+  function scrollToContact() {
+    var contactSection = document.getElementById("contactSection");
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
   
 
 </body>
